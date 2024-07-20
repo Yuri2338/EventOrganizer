@@ -19,8 +19,8 @@ struct Activity: Identifiable {
     var description: String
     
     func formatTime(_ time: Int) -> String {
-        if time >= 12 {
-            return "\(time == 12 ? 12 : time - 12) PM"
+        if time > 12 {
+            return "\(time - 12) PM"
         } else {
             return "\(time) AM"
         }
