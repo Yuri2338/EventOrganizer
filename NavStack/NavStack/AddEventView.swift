@@ -60,16 +60,6 @@ struct AddEventView: View {
     }
 
     private func saveEvent() {
-        guard !title.isEmpty else {
-            // Handle validation errors
-            return
-        }
-
-        if let startTime = startTime, let endTime = endTime, startTime >= endTime {
-            // Handle invalid time input
-            return
-        }
-
         let newEvent = Activity(
             preview: Image(systemName: selectedIcon),
             title: title,
