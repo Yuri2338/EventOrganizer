@@ -1,1 +1,4 @@
-First version of testing simple functionalities of the NavigationStack view in SwiftUI
+Testing simple functionalities of the NavigationStack view in SwiftUI
+
+things to add:
+  -editing and deleting events
