@@ -75,7 +75,6 @@ struct AddEventView: View {
 }
 
 extension Binding {
-    /// Provides a binding to an optional value with a default.
     init(_ source: Binding<Value?>, default defaultValue: Value) {
         self.init(
             get: { source.wrappedValue ?? defaultValue },
